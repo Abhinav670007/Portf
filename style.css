@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dancing Script', cursive;
+    scroll-behavior: smooth;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: relative; 
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+
+    width: 85%;
+    margin-left: 100px; 
+    align-items: center;    
+}
+.logo{
+    width: 130px;
+
+}
+.ls1{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.links:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.th1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.sp1{
+    color: orangered;
+}
+.dw1{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    display: inline-block;    
+    margin-top: 15px;
+    border-radius: 5px;
+
+}
+.title-img{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.title-img img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+.title-img:hover #shape{
+    bottom: 70px;
+}
+.title-img:hover #sxy{
+    left: 10%;
+
+
+}
+
+#about,#skill{
+    margin: 8% 8%;
+}
+
+
+.hd1{
+    text-align: center;
+}
+.hd1 h2{
+    font-size: 30px;
+}
+.hd1 span{
+    color: darkgreen;
+}
+.about-cntnt,.skill-contnt{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.about-img img{
+    width: 80%;
+    border: 2rem;
+}
+.info{
+    margin-top: 25px;
+}
+.infobox{
+    margin-top: 20px;
+}
+.sk-img img{
+    width: 90%;
+    padding-left: 50px;
+}
+.bar-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;/* div nde 100% pookum */
+    padding: irem 0;
+    margin: 8px;
+    height: 60px;
+    
+}
+
+
+.bar{
+    background: #000;
+    width: 100%;
+    height: .5rem;
+    border-radius: .5rem;
+    position: absolute;/* onnende mukalill onnee */
+    bottom: 0px;
+}
+.bar95{
+    background-color: orange;
+    width: 95%;
+}
+.bar-cont bar{
+    margin-top: 10px;
+}
+.pgrs{
+    margin-top: 20px;
+}
+
+#contact{
+   
+    margin: 0% 8%;
+}
+.icon-set{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    
+}
+.icon , .arrw{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: solid; */
+
+        
+}
+.icon i , .arrw{
+    /* font-size: 30px; */
+    color: black;
+    /* border-radius: 50%; */
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right ,yellow,orange);
+    color: white;
+    animation: shake infinite 0.75s;
+
+}
+@keyframes shake{
+    10% {transform: rotate(15deg);}
+    20% {transform: rotate(-15deg);}
+    30% {transform: rotate(15deg);}
+    40% {transform: rotate(-15deg);}    
+}
+.ftr{
+    padding-left: 39%;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.arrw{
+    float: right;
+    background-image: linear-gradient(to bottom right ,yellow,orange);
+    margin: 0px 10px 50px 0px;
+    
+}
+.arrw:hover i
+ , .icon:hover i{
+    color: white;
+
+}
+
+
+
